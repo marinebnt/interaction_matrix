@@ -34,7 +34,7 @@ a- for fish :
    Their spatial dimention is only considered as a spatial presence absence accordind to the cell we are focusing on. 
    Their biomass is built over the course of time. 
    Therefore, the only non-spatialised dimension we have to create for the fish organisms is their now-matrix of accessibility-interaction.
-   That is to say, we are converting the distribution map of the fish into an interaction parameter.
+   That is to say, we are converting the distribution map of the fish into an interaction parameter and integrating it into the model as explained earlier.
 b- for low trophic levels (ltl) : 
    The ltl organisms are exclusively preys in our model.
    Instead of a presence/absence distribution map, they have a biomass distribution over the mediterranean sea. 
@@ -43,8 +43,9 @@ b- for low trophic levels (ltl) :
    To do so : 
    (i)  the interaction matrix construction has a process really close to the one that was described earlier. 
         The main idea is that we are considering the proportion of ltl biomass encountered by the fish predators over their distribution map with respect to the whole ltl biomass in the Mediterranean sea. 
-        The ltl biomass distribution is spatialized, it means that the now-matrix of accesssibility-interaction includes this temporal dimension. 
-   (ii) the ltl biomass needs to be defined and time-dependant in some way. 
+        Again, the interaction parameter of the ltl is <1. 
+        The ltl biomass distribution is time-dependent, it means that the now-matrix of accesssibility-interaction includes this temporal dimension. 
+   (ii) the ltl biomass needs to be stored without the spatial dimension and time-dependant in some way. 
         We have converted the biomass distribution map into a time_dependant single-cell ltl biomass map. 
         This is done by suming up the ltl biomass over every cell of the mediterranean distribution map.  
         This part is done in the file : => eco3m-med_and_map_with0d.R <= 
