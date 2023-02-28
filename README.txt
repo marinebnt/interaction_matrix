@@ -1,4 +1,4 @@
-         How th remove the spatialisation form a spatialised configuration on osmose. 
+         How th remove the spatialization from a spatialized configuration on osmose. 
 
 
 OBJ : 
